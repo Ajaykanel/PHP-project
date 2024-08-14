@@ -4,11 +4,7 @@ if(isset($_POST['submit']))
 	$a=$_POST['a'];
 	$b=$_POST['b'];
 	$c=$_POST['c'];
-	
-	
-
 ?>
-
 <html>
 <head>
 <style>
@@ -22,16 +18,15 @@ input{height:50px; padding-left:10px;}
 <form method="post">
 	<pre>
 		<fieldset>
-			<legend> greater then</legend>
+		<legend> greater then</legend>
 		<input type="text" name="a" value="" placeholder="enter value a">
 		<input type="text" name="b" value="" placeholder="enter value b">
 		<input type="text" name="c" value="" placeholder='enter value c'>
 		<input type="submit" name="submit" value="submit" class="btn">
-		</fieldset>	
-	
+		</fieldset>
 	</pre>
 
-<input id="output" type="text" value="<?php if($a>$b && $a>$c)	{
+		<input id="output" type="text" value="<?php if($a>$b && $a>$c)	{
 		echo "a is greater then b and c";
 	}
 	elseif($b>$a && $b>$c){
@@ -45,9 +40,6 @@ input{height:50px; padding-left:10px;}
 	}
 }
 ?>" >
-
-
 </form>
-
 </body>
 </html>
